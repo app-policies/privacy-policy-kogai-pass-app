@@ -12,7 +12,7 @@
 - **学習データ**：問題への回答履歴、正誤記録、苦手フラグ（ブックマーク）
 - **設定情報**：文字サイズ設定、学習区分（全13区分）設定
 
-これらの情報はすべてお使いの端末内（ローカルデータベース）にのみ保存され、外部サーバーへ送信されることはありません。
+これらの情報はすべてお使いの端末内（ローカルデータベース）に保存されます。Firebase Analytics に送信する利用状況イベントには、問題本文、選択肢本文、解説本文、学習履歴の詳細、個人情報、公表問題本文を復元できる情報は含めません。
 
 ### 第三者サービスが収集する情報
 
@@ -37,6 +37,20 @@ AdMobのプライバシーポリシー：[https://policies.google.com/privacy](h
 
 RevenueCatのプライバシーポリシー：[https://www.revenuecat.com/privacy](https://www.revenuecat.com/privacy)
 
+#### Firebase Analytics（利用状況分析）
+本アプリでは、アプリの利用状況を把握し、学習体験や機能品質を改善するために、Google LLC が提供する Firebase Analytics を利用する場合があります。
+
+Firebase Analytics では、アプリの起動、初回の学習区分選択、学習モードの利用、区分ID、科目ID、正誤、模試結果のスコア帯、課金画面の表示元、レビュー依頼候補到達など、アプリの利用状況に関するイベントを送信することがあります。
+
+Firebase Analytics には、問題本文、選択肢本文、解説本文、自由入力、記述答案、氏名、メールアドレス、個別相談内容、Apple の決済識別子の生値、RevenueCat のユーザーID、広告ID、公表問題本文や出題文を復元できる情報を送信しません。
+
+本アプリで利用する Firebase は Analytics のみです。Firebase Auth、Firestore、Realtime Database、Cloud Functions、Storage、BigQuery export、Firebase AI Logic、Remote Config、Crashlytics、App Check、Cloud Messaging は利用していません。
+
+Firebase Analytics により収集される情報は、Google のプライバシーポリシーおよび Firebase の規約に従って取り扱われます。
+
+- Google プライバシーポリシー：[https://policies.google.com/privacy](https://policies.google.com/privacy)
+- Firebase におけるプライバシーとセキュリティ：[https://firebase.google.com/support/privacy](https://firebase.google.com/support/privacy)
+
 ---
 
 ## 2. 情報の利用目的
@@ -47,6 +61,7 @@ RevenueCatのプライバシーポリシー：[https://www.revenuecat.com/privac
 - アプリ設定の保持
 - 広告の配信（無料ユーザーのみ）
 - プレミアム機能の購入・復元処理
+- アプリの利用状況分析、学習体験および機能品質の改善
 
 ---
 
@@ -82,4 +97,4 @@ RevenueCatのプライバシーポリシー：[https://www.revenuecat.com/privac
 
 ---
 
-*最終更新日：2026年6月7日*
+*最終更新日：2026年6月18日*
